@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FC6094E-6E17-458C-BA46-7C347EABEBDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Empresa2XAOficial</RootNamespace>
+    <AssemblyName>Empresa2XAOficial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CadastroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroEmpresa.Designer.cs">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroFuncionario.Designer.cs">
+      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListagemDeEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListagemDeEmpresa.Designer.cs">
+      <DependentUpon>ListagemDeEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListagemDeFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListagemDeFuncionario.Designer.cs">
+      <DependentUpon>ListagemDeFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroEmpresa.resx">
+      <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroFuncionario.resx">
+      <DependentUpon>CadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListagemDeEmpresa.resx">
+      <DependentUpon>ListagemDeEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListagemDeFuncionario.resx">
+      <DependentUpon>ListagemDeFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelaInicial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroEmpresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroFuncionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoCadastrarFuncionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoVerFuncionarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoCadastrarEmpresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoVerEmpresas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListagemDeFuncionarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ListagemDeEmpresas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoVoltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoSalvar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroEmpresa-atualizado.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
