@@ -24,5 +24,13 @@ namespace Empresa2XAOficial
             telainicial.ShowDialog();
             this.Close();
         }
+
+        private void b_adicionarFuncionario_Click(object sender, EventArgs e)
+        {
+            Form cadastrofuncionario = new CadastroFuncionario();
+            this.Hide();
+            cadastrofuncionario.ShowDialog();
+            this.Close();
+        }
     }
 }

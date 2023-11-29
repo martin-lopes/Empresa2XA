@@ -24,18 +24,12 @@ namespace Empresa2XAOficial
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form cadastrofuncionario = new CadastroFuncionario();
-            this.Hide();
-            cadastrofuncionario.ShowDialog();
-            this.Close();
+            
         }
 
         private void b_cadastroempresa_Click(object sender, EventArgs e)
         {
-            Form cadastroempresa = new CadastroEmpresa();
-            this.Hide();
-            cadastroempresa.ShowDialog();
-            this.Close();
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

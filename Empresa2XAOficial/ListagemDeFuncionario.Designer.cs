@@ -29,33 +29,34 @@
         private void InitializeComponent()
         {
             this.b_voltar = new System.Windows.Forms.PictureBox();
-            this.b_salvar = new System.Windows.Forms.PictureBox();
+            this.b_adicionarFuncionario = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b_salvar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_adicionarFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // b_voltar
             // 
             this.b_voltar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoVoltar;
+            this.b_voltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_voltar.Location = new System.Drawing.Point(45, 377);
+            this.b_voltar.Location = new System.Drawing.Point(39, 384);
             this.b_voltar.Name = "b_voltar";
-            this.b_voltar.Size = new System.Drawing.Size(151, 50);
-            this.b_voltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.b_voltar.Size = new System.Drawing.Size(151, 54);
             this.b_voltar.TabIndex = 1;
             this.b_voltar.TabStop = false;
             this.b_voltar.Click += new System.EventHandler(this.b_voltar_Click);
             // 
-            // b_salvar
+            // b_adicionarFuncionario
             // 
-            this.b_salvar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoSalvar;
-            this.b_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_salvar.Location = new System.Drawing.Point(605, 377);
-            this.b_salvar.Name = "b_salvar";
-            this.b_salvar.Size = new System.Drawing.Size(147, 50);
-            this.b_salvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.b_salvar.TabIndex = 2;
-            this.b_salvar.TabStop = false;
+            this.b_adicionarFuncionario.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoAdicionarFuncionario;
+            this.b_adicionarFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.b_adicionarFuncionario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_adicionarFuncionario.Location = new System.Drawing.Point(596, 384);
+            this.b_adicionarFuncionario.Name = "b_adicionarFuncionario";
+            this.b_adicionarFuncionario.Size = new System.Drawing.Size(164, 53);
+            this.b_adicionarFuncionario.TabIndex = 2;
+            this.b_adicionarFuncionario.TabStop = false;
+            this.b_adicionarFuncionario.Click += new System.EventHandler(this.b_adicionarFuncionario_Click);
             // 
             // ListagemDeFuncionario
             // 
@@ -64,7 +65,7 @@
             this.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.ListagemDeFuncionarios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.b_salvar);
+            this.Controls.Add(this.b_adicionarFuncionario);
             this.Controls.Add(this.b_voltar);
             this.DoubleBuffered = true;
             this.MaximumSize = new System.Drawing.Size(818, 497);
@@ -72,15 +73,13 @@
             this.Name = "ListagemDeFuncionario";
             this.Text = "ListagemDeFuncionario";
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b_salvar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_adicionarFuncionario)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.PictureBox b_adicionarFuncionario;
         private System.Windows.Forms.PictureBox b_voltar;
-        private System.Windows.Forms.PictureBox b_salvar;
     }
 }

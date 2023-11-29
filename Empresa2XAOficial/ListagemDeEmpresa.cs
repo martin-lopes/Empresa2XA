@@ -31,5 +31,13 @@ namespace Empresa2XAOficial
         {
 
         }
+
+        private void b_adicionarEmpresa_Click(object sender, EventArgs e)
+        {
+            Form cadastroempresa = new CadastroEmpresa();
+            this.Hide();
+            cadastroempresa.ShowDialog();
+            this.Close();
+        }
     }
 }

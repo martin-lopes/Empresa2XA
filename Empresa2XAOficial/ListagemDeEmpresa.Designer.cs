@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.b_voltar = new System.Windows.Forms.PictureBox();
-            this.b_salvar = new System.Windows.Forms.PictureBox();
+            this.b_adicionarEmpresa = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b_salvar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_adicionarEmpresa)).BeginInit();
             this.SuspendLayout();
             // 
             // b_voltar
             // 
             this.b_voltar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoVoltar;
+            this.b_voltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_voltar.Location = new System.Drawing.Point(47, 379);
+            this.b_voltar.Location = new System.Drawing.Point(47, 380);
             this.b_voltar.Name = "b_voltar";
-            this.b_voltar.Size = new System.Drawing.Size(151, 50);
-            this.b_voltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.b_voltar.Size = new System.Drawing.Size(151, 49);
             this.b_voltar.TabIndex = 2;
             this.b_voltar.TabStop = false;
             this.b_voltar.Click += new System.EventHandler(this.b_voltar_Click_1);
             // 
-            // b_salvar
+            // b_adicionarEmpresa
             // 
-            this.b_salvar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoSalvar;
-            this.b_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_salvar.Location = new System.Drawing.Point(607, 379);
-            this.b_salvar.Name = "b_salvar";
-            this.b_salvar.Size = new System.Drawing.Size(147, 50);
-            this.b_salvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.b_salvar.TabIndex = 3;
-            this.b_salvar.TabStop = false;
-            this.b_salvar.Click += new System.EventHandler(this.b_salvar_Click);
+            this.b_adicionarEmpresa.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoAdicionarEmpresa;
+            this.b_adicionarEmpresa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.b_adicionarEmpresa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_adicionarEmpresa.Location = new System.Drawing.Point(591, 380);
+            this.b_adicionarEmpresa.Name = "b_adicionarEmpresa";
+            this.b_adicionarEmpresa.Size = new System.Drawing.Size(167, 49);
+            this.b_adicionarEmpresa.TabIndex = 3;
+            this.b_adicionarEmpresa.TabStop = false;
+            this.b_adicionarEmpresa.Click += new System.EventHandler(this.b_adicionarEmpresa_Click);
             // 
             // ListagemDeEmpresa
             // 
@@ -65,21 +65,20 @@
             this.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.ListagemDeEmpresas;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.b_salvar);
+            this.Controls.Add(this.b_adicionarEmpresa);
             this.Controls.Add(this.b_voltar);
             this.DoubleBuffered = true;
             this.Name = "ListagemDeEmpresa";
             this.Text = "ListagemDeEmpresa";
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.b_salvar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.b_adicionarEmpresa)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox b_voltar;
-        private System.Windows.Forms.PictureBox b_salvar;
+        private System.Windows.Forms.PictureBox b_adicionarEmpresa;
     }
 }

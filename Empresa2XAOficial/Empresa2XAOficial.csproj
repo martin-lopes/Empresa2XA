@@ -152,5 +152,14 @@
   <ItemGroup>
     <None Include="Resources\CadastroEmpresa-atualizado.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telainicial-atualizada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoAdicionarFuncionario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BotaoAdicionarEmpresa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

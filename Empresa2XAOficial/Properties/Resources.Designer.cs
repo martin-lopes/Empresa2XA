@@ -63,6 +63,26 @@ namespace Empresa2XAOficial.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BotaoAdicionarEmpresa {
+            get {
+                object obj = ResourceManager.GetObject("BotaoAdicionarEmpresa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BotaoAdicionarFuncionario {
+            get {
+                object obj = ResourceManager.GetObject("BotaoAdicionarFuncionario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BotaoCadastrarEmpresa {
             get {
                 object obj = ResourceManager.GetObject("BotaoCadastrarEmpresa", resourceCulture);
@@ -176,6 +196,16 @@ namespace Empresa2XAOficial.Properties {
         internal static System.Drawing.Bitmap TelaInicial {
             get {
                 object obj = ResourceManager.GetObject("TelaInicial", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telainicial_atualizada {
+            get {
+                object obj = ResourceManager.GetObject("Telainicial-atualizada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

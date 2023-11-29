@@ -63,11 +63,11 @@
             // b_voltar
             // 
             this.b_voltar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoVoltar;
+            this.b_voltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b_voltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.b_voltar.Location = new System.Drawing.Point(38, 379);
             this.b_voltar.Name = "b_voltar";
             this.b_voltar.Size = new System.Drawing.Size(151, 50);
-            this.b_voltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.b_voltar.TabIndex = 3;
             this.b_voltar.TabStop = false;
             this.b_voltar.Click += new System.EventHandler(this.b_voltar_Click);
@@ -75,11 +75,11 @@
             // b_salvar
             // 
             this.b_salvar.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.BotaoSalvar;
+            this.b_salvar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.b_salvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.b_salvar.Location = new System.Drawing.Point(605, 379);
             this.b_salvar.Name = "b_salvar";
             this.b_salvar.Size = new System.Drawing.Size(147, 50);
-            this.b_salvar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.b_salvar.TabIndex = 4;
             this.b_salvar.TabStop = false;
             // 

@@ -19,9 +19,9 @@ namespace Empresa2XAOficial
 
         private void b_voltar_Click(object sender, EventArgs e)
         {
-            Form telainicial = new TelaInicial();
+            Form listagemfuncionario = new ListagemDeFuncionario();
             this.Hide();
-            telainicial.ShowDialog();
+            listagemfuncionario.ShowDialog();
             this.Close();
         }
     }
