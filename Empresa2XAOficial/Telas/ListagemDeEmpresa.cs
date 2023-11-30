@@ -1,4 +1,5 @@
 ﻿using Empresa2XAOficial;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,7 +44,24 @@ namespace Empresa2XAOficial
 
         private void ListagemDeEmpresa_Load(object sender, EventArgs e)
         {
-
+            using (var conexao = new MySqlConnection("server=localhost;uid=root;pwd=An4Di3go1!;database=bd_empresa2xa_modelofisico"))
+            {
+                try
+                {
+                    conexao.Open();
+                    string query = "SELECT * FROM empresa";
+                    using (var da = new MySqlDataAdapter(query, conexao))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        dtgrade_empresa.DataSource = dt;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao carregar dados: " + ex.Message);
+                }
+            }
         }
     }
 }

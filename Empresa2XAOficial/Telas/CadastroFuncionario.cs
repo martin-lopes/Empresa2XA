@@ -20,7 +20,6 @@ namespace Empresa2XAOficial
         public CadastroFuncionario()
         {
             InitializeComponent();
-            //Consultar(_funcionario);
         }
 
         private void b_voltar_Click(object sender, EventArgs e)
@@ -120,46 +119,6 @@ namespace Empresa2XAOficial
 
             catch (Exception ex) { MessageBox.Show(ex.Message); }
 
-        }
-
-        void Consultar(Funcionario _funcionario)
-        {
-            try
-            {
-                var conexao = new Conexao();
-
-                var comando = conexao.Comando("SELECT * FROM funcionario");
-
-                var leitor = comando.ExecuteReader();
-
-                string resultado = null;
-
-                while (leitor.Read())
-                {
-                    var funcionario = new Funcionario();
-                    funcionario.Id = leitor.GetString("id_fun");
-                    funcionario.Nome = leitor.GetString("nome_fun");
-
-                    var posicaocoluna = leitor.GetOrdinal("cpf_fun");
-
-                    if(! leitor.IsDBNull(posicaocoluna) )
-                    {
-                        funcionario.Cpf = leitor.GetString("cpf_fun");
-                    }
-
-                    listaFuncionarios.Add(funcionario);
-                }
-
-                //ListagemDeFuncionario.dtgrade_funcionario.DataSource = listaFuncionarios;
-
-
-                MessageBox.Show(resultado);
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
     }
 }

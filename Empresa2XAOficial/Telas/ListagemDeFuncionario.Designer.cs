@@ -70,6 +70,7 @@
             this.dtgrade_funcionario.RowTemplate.Height = 24;
             this.dtgrade_funcionario.Size = new System.Drawing.Size(698, 274);
             this.dtgrade_funcionario.TabIndex = 5;
+            this.dtgrade_funcionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrade_funcionario_CellContentClick);
             // 
             // ListagemDeFuncionario
             // 
