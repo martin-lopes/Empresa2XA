@@ -15,6 +15,8 @@ namespace Empresa2XAOficial
     public partial class CadastroFuncionario : Form
     {
         public Funcionario _funcionario;
+
+        public List<Funcionario> listaFuncionarios = new List<Funcionario>();
         public CadastroFuncionario()
         {
             InitializeComponent();
@@ -134,8 +136,22 @@ namespace Empresa2XAOficial
 
                 while (leitor.Read())
                 {
-                    resultado += "\n" + leitor.GetString("nome_fun");
+                    var funcionario = new Funcionario();
+                    funcionario.Id = leitor.GetString("id_fun");
+                    funcionario.Nome = leitor.GetString("nome_fun");
+
+                    var posicaocoluna = leitor.GetOrdinal("cpf_fun");
+
+                    if(! leitor.IsDBNull(posicaocoluna) )
+                    {
+                        funcionario.Cpf = leitor.GetString("cpf_fun");
+                    }
+
+                    listaFuncionarios.Add(funcionario);
                 }
+
+                //ListagemDeFuncionario.dtgrade_funcionario.DataSource = listaFuncionarios;
+
 
                 MessageBox.Show(resultado);
             }
