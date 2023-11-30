@@ -30,8 +30,10 @@
         {
             this.b_voltar = new System.Windows.Forms.PictureBox();
             this.b_adicionarFuncionario = new System.Windows.Forms.PictureBox();
+            this.dtgrade_funcionario = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.b_adicionarFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrade_funcionario)).BeginInit();
             this.SuspendLayout();
             // 
             // b_voltar
@@ -58,6 +60,17 @@
             this.b_adicionarFuncionario.TabStop = false;
             this.b_adicionarFuncionario.Click += new System.EventHandler(this.b_adicionarFuncionario_Click);
             // 
+            // dtgrade_funcionario
+            // 
+            this.dtgrade_funcionario.BackgroundColor = System.Drawing.Color.Honeydew;
+            this.dtgrade_funcionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrade_funcionario.Location = new System.Drawing.Point(51, 88);
+            this.dtgrade_funcionario.Name = "dtgrade_funcionario";
+            this.dtgrade_funcionario.RowHeadersWidth = 51;
+            this.dtgrade_funcionario.RowTemplate.Height = 24;
+            this.dtgrade_funcionario.Size = new System.Drawing.Size(698, 274);
+            this.dtgrade_funcionario.TabIndex = 5;
+            // 
             // ListagemDeFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -65,6 +78,7 @@
             this.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.ListagemDeFuncionarios;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtgrade_funcionario);
             this.Controls.Add(this.b_adicionarFuncionario);
             this.Controls.Add(this.b_voltar);
             this.DoubleBuffered = true;
@@ -75,6 +89,7 @@
             this.Load += new System.EventHandler(this.ListagemDeFuncionario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.b_adicionarFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrade_funcionario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -82,5 +97,6 @@
         #endregion
         private System.Windows.Forms.PictureBox b_adicionarFuncionario;
         private System.Windows.Forms.PictureBox b_voltar;
+        private System.Windows.Forms.DataGridView dtgrade_funcionario;
     }
 }

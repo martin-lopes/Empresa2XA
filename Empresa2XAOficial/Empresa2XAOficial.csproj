@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Codigos\Empresa.cs" />
     <Compile Include="Codigos\Funcionario.cs" />
     <Compile Include="Codigos\VerifyCpf.cs" />
     <Compile Include="Codigos\VerifyEmail.cs" />
@@ -218,6 +219,8 @@
   <ItemGroup>
     <None Include="Resources\BotaoAdicionarEmpresa.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\CadastroEmpresa - atualizado3versao.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

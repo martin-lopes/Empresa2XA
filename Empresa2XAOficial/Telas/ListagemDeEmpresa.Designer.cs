@@ -30,8 +30,10 @@
         {
             this.b_voltar = new System.Windows.Forms.PictureBox();
             this.b_adicionarEmpresa = new System.Windows.Forms.PictureBox();
+            this.dtgrade_empresa = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.b_adicionarEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrade_empresa)).BeginInit();
             this.SuspendLayout();
             // 
             // b_voltar
@@ -58,6 +60,17 @@
             this.b_adicionarEmpresa.TabStop = false;
             this.b_adicionarEmpresa.Click += new System.EventHandler(this.b_adicionarEmpresa_Click);
             // 
+            // dtgrade_empresa
+            // 
+            this.dtgrade_empresa.BackgroundColor = System.Drawing.Color.Honeydew;
+            this.dtgrade_empresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgrade_empresa.Location = new System.Drawing.Point(47, 83);
+            this.dtgrade_empresa.Name = "dtgrade_empresa";
+            this.dtgrade_empresa.RowHeadersWidth = 51;
+            this.dtgrade_empresa.RowTemplate.Height = 24;
+            this.dtgrade_empresa.Size = new System.Drawing.Size(698, 274);
+            this.dtgrade_empresa.TabIndex = 4;
+            // 
             // ListagemDeEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -65,6 +78,7 @@
             this.BackgroundImage = global::Empresa2XAOficial.Properties.Resources.ListagemDeEmpresas;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtgrade_empresa);
             this.Controls.Add(this.b_adicionarEmpresa);
             this.Controls.Add(this.b_voltar);
             this.DoubleBuffered = true;
@@ -73,6 +87,7 @@
             this.Load += new System.EventHandler(this.ListagemDeEmpresa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.b_voltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.b_adicionarEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgrade_empresa)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -81,5 +96,6 @@
 
         private System.Windows.Forms.PictureBox b_voltar;
         private System.Windows.Forms.PictureBox b_adicionarEmpresa;
+        private System.Windows.Forms.DataGridView dtgrade_empresa;
     }
 }

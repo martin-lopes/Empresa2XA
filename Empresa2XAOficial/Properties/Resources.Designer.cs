@@ -153,6 +153,16 @@ namespace Empresa2XAOficial.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CadastroEmpresa___atualizado3versao {
+            get {
+                object obj = ResourceManager.GetObject("CadastroEmpresa - atualizado3versao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CadastroEmpresa_atualizado {
             get {
                 object obj = ResourceManager.GetObject("CadastroEmpresa-atualizado", resourceCulture);

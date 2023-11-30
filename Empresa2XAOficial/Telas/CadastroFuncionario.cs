@@ -87,7 +87,7 @@ namespace Empresa2XAOficial
 
             else
             {
-                MessageBox.Show("Erro no cadastro. Revise suas informações.", "Cadastro de Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Erro no cadastro. CPF inválido.", "Cadastro de Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -113,7 +113,7 @@ namespace Empresa2XAOficial
 
                 var resultado = comando.ExecuteNonQuery();
 
-                if (resultado > 0) { MessageBox.Show("Funcionário Cadastrado com sucesso.", "Cadastro de Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Information); }
+                if (resultado > 0) { MessageBox.Show("Funcionário cadastrado com sucesso.", "Cadastro de Funcionário", MessageBoxButtons.OK, MessageBoxIcon.Information); }
             }
 
             catch (Exception ex) { MessageBox.Show(ex.Message); }
